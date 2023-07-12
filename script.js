@@ -1,4 +1,4 @@
-const API_KEY = "2395ce84bf7d4a31a72ddfe23a70d4b9";
+const API_KEY = "20f648ee778a4d2b9a2ae248ef2ce012";
 const url = "https://newsapi.org/v2/everything?q=";
 const today = new Date();
 const date_today = today.getDate();
