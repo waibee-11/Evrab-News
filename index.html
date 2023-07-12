@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="evrab_logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="media.css">
+    <title>Evrab News</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <section class="navbar-section">
+        <div class="container navbar-container">
+            <div class="navbar-flex flex">
+                <a href="#" onclick="reload()">
+                    <img src="evrab_news.jpeg" alt="" class="nav-logo">
+                </a>
+                <div class="navbar-topics flex">
+                    <a class="navbar-link hover-link" id="cricket ipl" onclick="onNavItemClick('cricket ipl')">Cricket</a>
+                    <a class="navbar-link hover-link" id="finance" onclick="onNavItemClick('finance')">Finance</a>
+                    <a class="navbar-link hover-link" id="maharashtra" onclick="onNavItemClick('maharashtra')">Maharashtra</a>
+                    <a class="navbar-link hover-link" id="india bharat" onclick="onNavItemClick('india bharat')">India</a>
+                    <a class="navbar-link hover-link" id="international politics" onclick="onNavItemClick('international politics')">International</a>
+                </div>
+                <div class="navbar-search flex">
+                    <input type="Search" placeholder="e.g. Politics" id="input-text">
+                    <button class="navbar-button" id="search-button">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <section class="main-section">
+        <div class="container cards-container flex" id="cards-container">
+        </div>
+        <button class="go-back-button" onclick="goUp()">Go Up</button>
+        <button id="dark-mode-button" onclick="toggleDarkMode()"> Dark Mode On/Off</button>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-section">
+        <div class="container footer-container flex">
+            <div class="images flex">
+                <img src="evrab_logo.jpeg" alt="">
+                <img src="yash_logo.jpeg" alt="">
+            </div>
+            <h5>© 2023, All Rights Reserved. Yash Harshal Barve</h5>
+        </div>
+    </section>
+
+    <!-- template -->
+    <template id="template-news-card">
+        <div class="card-item flex">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-item" id="news-img">
+            </div>
+            <div class="card-content flex">
+                <h3 id="news-title">Title</h3>
+                <h5 id="news-source">Formula One, 14th January 2023</h5>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit alias expedita id ab laborum.</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>

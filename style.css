@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* utility classes */
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.hover-link{
+    color: black;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.hover-link:hover{
+    border: solid 1.3px black;
+}
+
+.dark{
+    background: #040404;
+    color: white;
+}
+
+/* navbar */
+
+.navbar-section{
+    background: #d7fbfc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.navbar-container{
+    padding-block: 10px;
+}
+
+.navbar-flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 75px;
+    border: 2px solid black;
+}
+
+.navbar-link{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar-link.active{
+    background-color: #000000;
+    color: white;
+}
+
+.navbar-search{
+    gap: 5px;
+}
+
+.navbar-search input{
+    font-family: 'Roboto', sans-serif;
+    height: 40px;
+    width: 280px;
+    border: 2px solid black;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.navbar-button{
+    font-family: 'Roboto', sans-serif;
+    height: 40px;
+    width: 80px;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.2s ease-out;
+    font-weight: 800;
+}
+
+.navbar-button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* main */
+
+.cards-container{
+    padding-top: 10px;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 125px;
+}
+
+.card-item{
+    cursor: pointer;
+    width: 360px;
+    min-height: 400px;
+    justify-content: start;
+    flex-direction: column;
+    gap: 7px;
+    border: 2px solid black;
+    padding-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.card-item-dark{
+    cursor: pointer;
+    width: 360px;
+    min-height: 400px;
+    justify-content: start;
+    flex-direction: column;
+    gap: 7px;
+    border: 2px solid rgb(190, 187, 187);
+    padding-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.card-item:hover{
+    transform: translateY(-2px);
+    box-shadow: 1px 1px #000000;
+}
+
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding-inline: 10px;
+    flex-direction: column;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.go-back-button{
+    position: fixed;
+    bottom: 175px;
+    right: 40px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid black;
+}
+
+#dark-mode-button{
+    position: fixed;
+    bottom: 175px;
+    left: 40px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid black;
+}
+
+/* footer */
+
+.footer-section{
+    margin-top: 20px;
+    background-color: #000000;
+}
+
+.footer-container{
+    flex-direction: column;
+    padding-block: 20px;
+    align-items: center;
+    gap: 15px;
+}
+
+.images{
+    gap: 20px;
+}
+
+.images img{
+    width: 75px;
+}
+
+.footer-container h5{
+    color: white;
+}
