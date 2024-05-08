@@ -29,6 +29,10 @@ button{
     justify-content: center;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 .hover-link{
     color: black;
     padding: 20px;
